@@ -1,0 +1,36 @@
+// import fonts
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap');
+
+// import partials
+@import 'variables';
+@import 'base';
+@import 'layout';
+@import 'state';
+
+// global reset
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $background-color;
+}
+
+// global reset ends
+
+// global rules
+html {
+    scroll-behavior: smooth;
+}
+
+
+h2 {
+    font-family: $header-font-family;
+    font-size: $subheader-font-size;
+}
+
+p {
+    font-family: $body-text-font-family;
+}
+
+// global rules end

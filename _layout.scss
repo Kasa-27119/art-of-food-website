@@ -1,0 +1,889 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// HOME PAGE STYLING
+// hero home page styling
+.hero-container {
+    width: 100%;
+    height: 65.527vh;
+    background-image: url(./img/hero-home.jpg);
+    background-position: 60% 10%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .hero-right {
+        margin-left: 40%;
+        margin-top: 5%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        // hero info
+        .hero-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .hero-logo {
+                width: 450px;
+                height: 400px;
+                // margin-bottom: 0.625rem;
+                background-image: url(./img/art-of-food-red-logo.svg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            .hero-btn-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .hero-btn {
+                    transition: background-color 0.28s ease;
+                    margin: 0 1.25rem;
+                    padding: 0.938rem;
+                    background-color: $primary-color;
+                    border-radius: $corner-round-radius;
+                    border: $mobile-header-outline;
+
+                    .hero-btn-link {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-decoration: none;
+                        color: $secondary-color;
+                        font-size: $navlink-font-size;
+                        font-family: $header-font-family;
+
+                    }
+                }
+            }
+        }
+    }
+
+    // red checkers
+    .hero-red-checkers {
+        width: 100%;
+        height: 60px;
+        background-image: url(./img/bottom\ border\ checkers-01.svg);
+        background-position: center;
+    }
+
+}
+
+// hero home page styling ends
+
+// mission styling
+.mission-container {
+    width: 100%;
+    height: auto;
+    padding: 60px 0 80px;
+    display: flex;
+    flex-direction: row;
+
+    .mission-img,
+    .mission-info-box {
+        border: $red-box-border;
+        border-radius: $corner-round-radius;
+    }
+
+    // img container
+    .mission-img-container {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+
+        .mission-img {
+            height: 100%;
+            width: 80%;
+            background-image: url(./img/mission-statement.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    // text and title container
+    .mission-info-container {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .mission-subheader {
+            margin-bottom: 20px;
+            color: $primary-color;
+            -webkit-text-stroke: 1px $secondary-color;
+        }
+
+        // bordered text box
+        .mission-info-box {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+
+            .mission-text {
+                width: 80%;
+                font-size: $body-text-font-size;
+                margin: 20px 0 20px 20px;
+
+                .bolded-body-text {
+                    font-weight: 700;
+                }
+            }
+
+            // green checkers inside box
+            .box-checker {
+                width: 50px;
+                height: 100%;
+                background-image: url(./img/checkers\ green.svg);
+
+            }
+        }
+    }
+}
+
+// mission styling ends
+
+
+// testimonial section styling
+.testimonial-container {
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    background-color: $primary-color;
+
+    // testimonial title
+    .testimonial-h2 {
+        margin: 0 0 20px 0;
+        color: $secondary-color;
+        text-align: center;
+    }
+
+    // testimonial panels
+    .testimonial-grid {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 230px 230px 230px 230px;
+        column-gap: 5%;
+
+        .testimonial-grid-item {
+            background-color: $secondary-color;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: $corner-round-radius;
+
+            .testimonial-title,
+            .testimonial-body-text,
+            .testimonial-date {
+                color: $body-text-color;
+            }
+
+            .testimonial-top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: $review-subheader-font-size;
+                font-family: $header-font-family;
+
+                .testimonial-stars {
+                    color: $review-stars-color;
+                }
+
+                .testimonial-profile {
+                    width: 65px;
+                    height: 65px;
+                }
+
+                .tommy {
+                    background-image: url(./img/reviews/tommy.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 100%;
+                }
+            }
+
+            .testimonial-date,
+            .testimonial-stars {
+                margin-top: 10px;
+            }
+
+            .testimonial-bottom {
+                margin-top: 15px;
+                font-size: $review-text-font-size;
+
+                .testimonial-date {
+                    text-align: right;
+                    font-weight: 700;
+                }
+            }
+
+
+
+
+
+
+
+        }
+
+    }
+
+}
+
+// testimonial section styling ends
+
+// location section styling
+.location-container {
+    width: 100%;
+    height: auto;
+    padding: 60px 0 80px;
+    display: flex;
+    flex-direction: row-reverse;
+
+    .location-info-box,
+    .location-img {
+        border: $red-box-border;
+        border-radius: $corner-round-radius;
+    }
+
+    // img container
+    .location-img-container {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+
+        .location-img {
+            height: 100%;
+            width: 80%;
+            background-image: url(./img/outdoor-view-venue.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    // text and title container
+    .location-info-container {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .location-subheader {
+            margin-bottom: 20px;
+            color: $primary-color;
+            -webkit-text-stroke: 1px $secondary-color
+        }
+
+        // bordered text box
+        .location-info-box {
+            width: 80%;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+
+            .location-text-form {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                // location body text
+                .location-text {
+                    font-size: $body-text-font-size;
+                    width: 95%;
+                    color: $body-text-color;
+                    margin: 20px 0 30px 20px;
+                }
+
+                // location email form
+                .location-form {
+                    width: 100%;
+                    display: flex;
+                    margin: 20px 0 20px 20px;
+
+                    #locationEmail {
+                        width: 70%;
+                        background-color: $secondary-color;
+                        border: $red-box-border;
+                        border-radius: $corner-round-radius;
+                        padding: 10px;
+                        font-size: $body-text-font-size;
+                        font-family: $body-text-font-family;
+                        color: $form-text-color;
+                    }
+
+                    // location email form button
+                    .submit-btn {
+                        width: 54px;
+                        height: 54px;
+                        margin-left: 15px;
+                        background-color: $primary-color;
+                        border: 0;
+                        border-radius: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        transition: color 0.28s ease;
+
+                        .fa-chevron-right {
+                            font-size: 1.7em;
+                            color: $accent-color;
+                        }
+                    }
+
+                }
+
+            }
+
+            // green checkers inside boxes
+            .box-checker {
+                width: 60px;
+                height: 530px;
+                background-image: url(./img/checkers\ green.svg);
+                background-size: cover;
+            }
+        }
+    }
+}
+
+// location section styling ends
+// HOME PAGE STYLING ENDS
+
+// RESERVATION PAGE STYLING
+// hero section styling
+.title-hero-container {
+    width: 100%;
+    height: auto;
+    background-position: 10% 60%;
+    background-size: cover;
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .hero-header {
+            margin: 15% 0;
+            font-size: $hero-header-font-size;
+            font-family: $header-font-family;
+            color: $accent-color;
+            text-shadow: -10px 10px $primary-color;
+            -webkit-text-stroke: 4px $primary-color;
+        }
+    }
+
+    // red checkers
+    .hero-red-checkers {
+        width: 100%;
+        height: 60px;
+        background-image: url(./img/bottom\ border\ checkers-01.svg);
+        background-position: center;
+    }
+}
+
+.reservation-hero {
+    background-image: url(./img/reservation-hero-img.jpg);
+}
+
+// hero section styling ends
+
+// reservation section styling
+.reservation-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 70px 0 70px 0;
+
+    .green-checkers {
+        width: 60px;
+        background-image: url(./img/checkers\ green.svg);
+        height: 100%;
+        background-position: 0%;
+        background-size: cover;
+
+    }
+
+    .reservation-info {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .reservation-imgs {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .reservation-info,
+    .reservation-imgs {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+
+        .reservation-subheader {
+            text-align: center;
+            margin-bottom: 20px;
+            color: $primary-color;
+            -webkit-text-stroke: 1px $secondary-color;
+        }
+
+        .reservation-hours-box,
+        .reservation-form-box {
+            width: 608px;
+            display: flex;
+            border: $red-box-border;
+            border-radius: $corner-round-radius;
+
+        }
+
+        .reservation-hours-box {
+            height: 180px;
+            justify-content: center;
+        }
+
+        .reservation-form-box {
+            height: 505px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 12%;
+        }
+    }
+
+    .reservation-hours-info-cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+
+        .reservation-hours-list {
+            list-style: none;
+            font-size: $body-text-font-size;
+            font-family: $header-font-family;
+            font-weight: 500;
+            color: $body-text-color;
+        }
+
+        .left-list {
+            margin-right: 40px;
+        }
+    }
+
+    .reservation-form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .checker-form {
+            height: 500px;
+        }
+
+        .reservation-form {
+            width: 75%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            label {
+                font-size: $body-text-font-size;
+                font-family: $header-font-family;
+                color: $body-text-color;
+                font-weight: 500;
+            }
+
+            #dateForm,
+            #timeForm,
+            #partysizeForm {
+                height: 55px;
+                margin-bottom: 2%;
+                padding: 5%;
+                border: $red-box-border;
+                border-radius: $corner-round-radius;
+                background-color: $secondary-color;
+                font-size: 19px;
+                font-family: $body-text-font-family;
+                color: $form-text-color;
+            }
+
+            #checkAvailability {
+                height: 50px;
+                padding-bottom: 7px;
+                background-color: $primary-color;
+                border: 0;
+                font-size: 1.813rem;
+                font-family: $header-font-family;
+                border-radius: $corner-round-radius;
+                color: $secondary-color;
+                width: 80%;
+                margin-left: 10%;
+            }
+
+        }
+
+
+    }
+
+
+    // reservation imgs container
+    .reservation-img-one,
+    .reservation-img-two {
+        width: 75%;
+        height: 47%;
+        background-position: center;
+        background-size: cover;
+        border: $red-box-border;
+        border-radius: $corner-round-radius;
+    }
+
+    .reservation-img-one {
+        background-image: url(./img/reservation-pizza.jpg);
+    }
+
+    .reservation-img-two {
+        background-image: url(./img/reservation-dining.jpg);
+    }
+
+    // reservation imgs container ends
+}
+
+// reservation section styling ends
+
+// contacts section
+.contacts-container {
+    // background-color: #d388e6;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+
+
+    .contacts-box {
+        height: 100%;
+        width: 85%;
+        background-color: $primary-color;
+        border-radius: $corner-round-radius;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .contact-details-box {
+            display: flex;
+            align-items: center;
+
+            .fa-solid {
+                font-size: 3.5rem;
+                margin-right: 30px;
+            }
+
+            .contact-info,
+            .fa-solid {
+                color: $secondary-color;
+            }
+
+            .contact-number {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// contacts section ends
+// RESERVATION PAGE STYLING ENDS
+
+// MENU PAGE STYLING
+// menu hero styling
+.menu-hero {
+    background-image: url(./img/menu-hero-img.jpg);
+    background-position: 0% 65%;
+}
+
+// menu hero styling ends
+
+// menu section
+.menu-section {
+    width: 100%;
+    padding: 50px 0;
+    height: auto;
+    // background-color: rgb(255, 203, 233);
+
+    .subheader {
+        text-align: center;
+        color: $primary-color;
+        -webkit-text-stroke: 1px $secondary-color;
+    }
+
+    // menu grid styling
+    .menu-grid-container {
+        width: 100%;
+        margin: 40px 0 0 0;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 295px);
+        grid-template-rows: repeat(2, 500px);
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+
+    // menu item panel styling
+    .menu-grid-item {
+        border: $menu-red-box-border;
+        border-radius: $corner-round-radius;
+        padding: 6%;
+        display: flex;
+        flex-direction: column;
+
+        // menu item img styling
+        .menu-item-img {
+            width: 100%;
+            height: 40%;
+            background-position: center;
+            background-size: cover;
+        }
+
+        // menu item text styling
+        .menu-item-details {
+            margin-top: 6%;
+            height: 60%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            color: $body-text-color;
+
+            // menu item headers styling
+            .menu-item-headers {
+                font-family: $header-font-family;
+                margin-bottom: 10%;
+
+                .menu-item-title {
+                    font-size: 38px;
+                    margin-bottom: 5%;
+                }
+
+                .menu-item-price {
+                    font-size: 34px;
+                }
+            }
+
+            // menu item description styling
+            .menu-item-desc {
+                font-size: 27px;
+            }
+
+        }
+
+        // menu text styling ends
+
+        // menu item img & ids- unique classes
+        // menu item imgs & ids- pizza section
+        .badabing {
+            background-image: url(./img/menu/Badabing.webp);
+        }
+
+        .art-of-pesto {
+            background-image: url(./img/menu/Art\ of\ Pesto.webp);
+        }
+
+        .santy {
+            background-image: url(./img/menu/Santy.webp);
+        }
+
+        .pepperoni {
+            background-image: url(./img/menu/Pepperoni\ Pizza.webp);
+        }
+
+        .mamma-mia {
+            background-image: url(./img/menu/Mamma\ Mia.webp);
+        }
+
+        .veg-lovers {
+            background-image: url(./img/menu/Vege\ Lover.webp);
+        }
+
+        .annabelle {
+            background-image: url(./img/menu/Annabelle.webp);
+        }
+
+        .meatzza {
+            background-image: url(./img/menu/meatzza.webp);
+        }
+
+        // menu item imgs - pizza section ends
+
+        // menu item imgs - sides
+        .pizza-bread {
+            background-image: url(./img/menu/Pizza\ Bread.webp);
+        }
+
+        .fries {
+            background-image: url(./img/menu/Fries.webp);
+        }
+
+        .curly-fries {
+            background-image: url(./img/menu/Curly\ Fries.webp);
+        }
+
+        .wedges {
+            background-image: url(./img/menu/Wedges.webp);
+        }
+
+        .kumara-fries {
+            background-image: url(./img/menu/Kumara\ Fries.webp);
+        }
+
+        .camembert {
+            background-image: url(./img/menu/Deep\ Fried\ Camembert.webp);
+        }
+
+        .platter {
+            background-image: url(./img/menu/Platter.webp);
+        }
+
+        .loaded-fries {
+            background-image: url(./img/menu/Loaded\ Fries.webp);
+        }
+
+        // menu item imgs - sides section ends
+
+        // menu item imgs & ids - drinks section
+        .coke {
+            background-image: url(./img/menu/Coke.webp);
+        }
+
+        .milkshakes {
+            background-image: url(./img/menu/milshakes.jpg);
+        }
+
+        .iced-coffee {
+            background-image: url(./img/menu/Iced\ Coffee.webp);
+        }
+
+        .iced-chocolate {
+            background-image: url(./img/menu/Iced\ Chocolate.webp);
+        }
+
+        .green-tea {
+            background-image: url(./img/menu/Green\ Tea.webp);
+        }
+
+        .english-breakfast {
+            background-image: url(./img/menu/English\ breakfast.webp);
+        }
+
+        #english-breakfast-title {
+            font-size: 30.7px;
+            margin-bottom: 8%;
+        }
+
+
+        .flat-white {
+            background-image: url(./img/menu/Flat\ white.webp);
+        }
+
+        .capuccino {
+            background-image: url(./img/menu/Cappuccino.webp);
+        }
+
+        // menu item imgs & ids - drinks section ends
+
+        // menu item imgs & ids - desserts section
+        .affogato {
+            background-image: url(./img/menu/Affogato.webp);
+        }
+
+        .hazelnut-pizza {
+            background-image: url(./img/menu/Hazelnut\ Pizza.webp);
+        }
+
+        #hazelnut-title {
+            font-size: 36.1px;
+            margin-bottom: 6%;
+        }
+
+        .apple-crumble-pizza {
+            background-image: url(./img/menu/Apple\ crumble\ pizza.webp);
+        }
+
+        #apple-crumble-title {
+            font-size: 26.6px;
+            margin-bottom: 9%;
+        }
+
+
+        .black-forest-pizza {
+            background-image: url(./img/menu/Black\ forest\ brownie\ pizza.webp);
+        }
+
+        #black-forest-title {
+            font-size: 28.5px;
+            margin-bottom: 7%;
+        }
+
+
+        .baked-cheesecake {
+            background-image: url(./img/menu/New\ York\ Baked\ Cheesecake.webp);
+        }
+
+        #baked-cheesecake-title {
+            font-size: 30.4px;
+            margin-bottom: 6%;
+        }
+
+        .chocolate-brownie {
+            background-image: url(./img/menu/Decadent\ Chocolate\ Brownie.webp);
+        }
+
+        #choc-brownie-title {
+            font-size: 29.5px;
+            margin-bottom: 5.5%;
+        }
+
+        .ny-cheesecake {
+            background-image: url(./img/menu/Cheesecake\ New\ york.webp);
+        }
+
+        #ny-cheesecake-title {
+            font-size: 25.6px;
+            margin-bottom: 6%;
+        }
+
+        .fudge-brownie {
+            background-image: url(./img/menu/Slice\ Chocolate\ Fudge\ Brownie.webp);
+        }
+
+        #fudge-brownie-title {
+            font-size: 31px;
+            margin-bottom: 4%;
+        }
+
+        // menu item imgs  & ids- dessert section ends
+        // menu item img & ids - unique classes end
+    }
+
+    // menu item panel styling ends
+}
+
+// menu section styling ends
+
+// MENU PAGE STYLING ENDS

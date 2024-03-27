@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Reservation</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar-container">
+        <!-- navbar logo -->
+        <img src="./img/art-of-food-green-logo.svg" alt="art of food logo" class="navbar-logo">
+
+        <!-- navbar links -->
+        <div class="navbar-links-container">
+            <ul class="navbar-links" id="navLinks">
+                <li><a href="./home.html" class="Home">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="./menu.html" class="Menu">Menu</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="./reservation.html" class="Reservation">Reservation</a></li>
+            </ul>
+        </div>
+
+        <!-- navbar social media icons -->
+        <div class="navbar-socials">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+
+        <!-- navbar hamburger icons -->
+        <div class="navbar-hamburger">
+            <span id="closeHam">
+                &#x2716;
+            </span>
+            <span id="openHam">
+                &#9776;
+            </span>
+        </div>
+
+    </nav>
+    <!-- navbar ends -->
+
+    <!-- hero section -->
+    <section class="title-hero-container reservation-hero">
+        <div class="header-container">
+            <h1 class="hero-header">Reservation</h1>
+        </div>
+        <div class="hero-red-checkers"></div>
+    </section>
+    <!-- hero section ends -->
+
+    <!-- reservation section -->
+    <section class="reservation-container">
+
+        <!-- left info container -->
+        <div class="reservation-info">
+
+            <!-- hours info container -->
+            <div class="reservation-hours-container">
+                <!-- hours subheader -->
+                <h2 class="reservation-subheader">Opening Hours</h2>
+
+                <!-- hours info box -->
+                <div class="reservation-hours-box">
+                    <!-- hours info checker pattern -->
+                    <div class="green-checkers checkers-hours"></div>
+
+                    <!-- hours info details container -->
+                    <div class="reservation-hours-info-cont">
+                        <ul class="reservation-hours-list left-list">
+                            <li>Tue - Fri</li>
+                            <li>9:30am - 3pm,</li>
+                            <li>4:30pm - 9pm</li>
+                        </ul>
+                        <ul class="reservation-hours-list">
+                            <li>Sat - Sun</li>
+                            <li>9:30am - 3pm,</li>
+                            <li>4:30pm - 9pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- hours info container ends -->
+
+            <!-- left info form container -->
+            <div class="reservation-form-container">
+                <!-- form subheader -->
+                <h2 class="reservation-subheader">Reservation</h2>
+                <!-- reservation form container -->
+                <div class="reservation-form-box">
+                    <div class="green-checkers checkers-form"></div>
+
+                    <!-- reservation form -->
+                    <form class="reservation-form">
+                        <label for="dateForm">Date</label>
+                        <input type="text" id="dateForm" name="date" value="07/03/24">
+
+                        <label for="timeForm">Time</label>
+                        <input type="text" id="timeForm" name="time" value="5pm-7pm">
+
+                        <label for="partysizeForm">Party Size</label>
+                        <input type="text" id="partysizeForm" name="party-size" value="7 People">
+
+                        <input type="submit" id="checkAvailability" value="Check Availability">
+                    </form>
+
+                </div>
+            </div>
+            <!-- left info form container ends -->
+        </div>
+        <!-- left side info container ends -->
+
+        <!-- right side imgs container -->
+        <div class="reservation-imgs">
+            <div class="reservation-img-one"></div>
+            <div class="reservation-img-two"></div>
+        </div>
+        <!-- right side imgs container ends -->
+    </section>
+    <!-- reservation section ends -->
+
+    <!-- contacts section -->
+    <div class="contacts-container">
+        <!-- contacts main box -->
+        <div class="contacts-box">
+            <div class="contact-details-box">
+                <i class="fa-solid fa-phone"></i>
+                <p class="contact-info contact-number">0210 612 522</p>
+            </div>
+
+            <div class="contact-details-box">
+                <i class="fa-solid fa-envelope"></i>
+                <p class="contact-info">info@artoffood.shop</p>
+            </div>
+
+            <div class="contact-details-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="contact-info">36 Main Street,<br>Upper Hutt 5018</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- contacts section ends -->
+
+    <!-- footer -->
+    <div class="footer-container">
+        <!-- footer logo -->
+        <div class="footer-logo">
+            <img src="./img/art-of-food-green-logo.svg" alt="art of food logo" class="footer-logo">
+        </div>
+        <!-- footer info text -->
+        <div class="footer-info">
+            <ul class="footer-info-list">
+                <li>General</li>
+                <li>Sitemap</li>
+                <li>More</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <!-- footer social media icons -->
+        <div class="footer-icons">
+            <div class="footer-socials">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <p class="footer-copyright">&#169; Copyright 2024 Art of Food</p>
+        </div>
+        <!-- footer email form -->
+        <div class="footer-form">
+            <form class="footer-form-email">
+                <label for="footerinsertEmail" id="footerformLabel">
+                    Sign Up/Log In
+                </label>
+
+                <div class="footer-input-btn">
+                    <input type="email" name="insert-email" id="footerinsertEmail" value="Insert email address">
+
+                    <div class="footer-submit-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- footer ends -->
+
+    <!-- font awesome js -->
+    <script src="https://kit.fontawesome.com/42e32376cc.js" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

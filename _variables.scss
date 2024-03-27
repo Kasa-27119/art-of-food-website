@@ -1,0 +1,45 @@
+// variables
+$primary-color: #861B1B;
+$secondary-color: #E5D8CD;
+$background-color: #F6EEE8;
+$body-text-color: #502D19;
+$accent-color:white;
+$green-color: #184126;
+$form-text-color: #514C4C;
+$review-stars-color: #C7AC1E;
+
+$header-font-family: "Sansita Swashed",
+system-ui;
+$body-text-font-family:"Chivo",
+sans-serif;
+
+// desktop sizes variables
+$hero-header-font-size:140px;
+$subheader-font-size:4.625rem;
+$body-text-font-size:1.5rem;
+$navlink-font-size: 2rem;
+$review-subheader-font-size:18px;
+$review-text-font-size: 14px;
+$review-date-font-size: 11px;
+
+$red-box-border: 3px solid $primary-color;
+$menu-red-box-border: 2px solid $primary-color;
+$scrollbar-button-border: 3px solid $green-color;
+$corner-round-radius: 0.625rem;
+
+// tablet sizes variables
+$tablet-subheader: 4.063rem;
+
+// mobile sizes & variables
+$mobile-hero-font-size: 3.5rem;
+$mobile-subheader-font-size: 3.1rem;
+$mobile-body-font-size: 1.4rem;
+$mobile-btn-font-size: 2rem;
+
+// mobile buttons
+$mobile-btn-width: 210px;
+$mobile-btn-height: 65px;
+$mobile-btn-padding: 10px 18px;
+
+// mobile styles
+$mobile-header-outline: 0;

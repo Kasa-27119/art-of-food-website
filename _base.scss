@@ -1,0 +1,203 @@
+// NAVBAR STYLING
+// navbar main container
+.navbar-container {
+    width: 100%;
+    height: auto;
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    // navbar log
+    .navbar-logo {
+        height: 6rem;
+    }
+
+    // navbar links main container
+    .navbar-links-container {
+        z-index: 20;
+
+        .navbar-links {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            font-family: $header-font-family;
+            font-size: $navlink-font-size;
+            font-weight: 500;
+
+            li {
+
+                // navbar links
+                a {
+                    margin: 0 30px;
+                    padding: 10px 13px;
+                    text-decoration: none;
+                    color: $secondary-color;
+                    border-radius: $corner-round-radius;
+                    transition: background-color 0.28s ease;
+                }
+            }
+        }
+    }
+
+    // navbar social media icon container
+    .navbar-socials {
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+
+        // navbar social media icons
+        .fa-facebook,
+        .fa-square-instagram,
+        .fa-youtube {
+            font-size: 3rem;
+            color: $accent-color;
+        }
+    }
+
+    // navbar hamburger container & icons
+    .navbar-hamburger {
+        font-size: $navlink-font-size;
+        color: $accent-color;
+        font-size: $mobile-subheader-font-size;
+        font-weight: 800;
+        display: none;
+    }
+}
+
+// NAVBAR STYLING ENDS
+
+// SCROLLBAR STYLING
+// scrollbar main container
+.scrollbar-container {
+    height: auto;
+    width: 55px;
+    z-index: 10;
+    position: fixed;
+    top: 45%;
+    right: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 7px;
+
+    // scrollbar button
+    .scrollbar-btn-container {
+        text-decoration: none;
+
+        .scrollbar-btn {
+            height: 40px;
+            width: 40px;
+            background-color: $accent-color;
+            border: $scrollbar-button-border;
+            border-radius: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: $green-color;
+            font-size: $body-text-font-size;
+            font-family: $body-text-font-family;
+            transition: background-color 0.28s ease;
+        }
+    }
+}
+
+// SCROLLBAR STYLING ENDS
+
+// footer styling
+// footer main container
+.footer-container {
+    width: 100%;
+    height: 21vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $primary-color;
+    font-family: $body-text-font-family;
+    color: $secondary-color;
+    font-size: 1.375rem;
+
+    // footer content
+    // footer logo
+    .footer-logo {
+        width: 8.813rem;
+    }
+
+    .footer-info-list,
+    .footer-copyright {
+        font-weight: 200;
+    }
+
+    // footer info
+    .footer-info-list {
+        list-style: none;
+        padding: 0%;
+
+        li {
+            margin-bottom: 7px;
+        }
+    }
+
+    // footer social media icons
+    .footer-socials {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 10%;
+
+        .fa-facebook,
+        .fa-square-instagram,
+        .fa-youtube {
+            font-size: 3.5rem;
+            color: $accent-color;
+        }
+    }
+
+    // footer form
+    .footer-form-email {
+        display: flex;
+        flex-direction: column;
+        color: $secondary-color;
+
+        // footer form label
+        #footerformLabel {
+            margin-bottom: 10px;
+        }
+
+        // footer form field
+        #footerinsertEmail {
+            width: 290px;
+            height: 63px;
+            border: 3px solid $secondary-color;
+            background-color: $primary-color;
+            border-radius: $corner-round-radius;
+            padding: 10px;
+
+            color: rgba($color: #ffffff, $alpha: 0.5);
+            font-size: $body-text-font-size;
+            font-family: $body-text-font-family;
+            font-weight: 100;
+        }
+
+        // footer submit button
+        .footer-input-btn {
+            display: flex;
+            align-content: center;
+
+            .footer-submit-btn {
+                width: 40px;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+// footer styling ends
